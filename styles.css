@@ -1,0 +1,86 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: linear-gradient(180deg, #ff6f61, #ffc371); /* Degradado vibrante */
+    color: #ffffff;
+  }
+  
+  header {
+    text-align: center;
+    background: linear-gradient(45deg, #ff5722, #ff9800);
+    color: white;
+    padding: 3rem 1rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+  }
+  
+  /* Secciones */
+  .section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    height: 75vh; /* Ocupa gran parte de la pantalla, pero no toda */
+    margin: 2rem auto;
+    padding: 2rem;
+    width: 90%; /* Más estrecho que el ancho total */
+    max-width: 900px;
+    background: #ffffff;
+    color: #333;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  /* Texto */
+  .section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #ff6f61; /* Resalta con el fondo blanco */
+  }
+  
+  .section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: #555;
+  }
+  
+  /* Animación para secciones visibles */
+  .section.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Botón de WhatsApp */
+  .whatsapp-button {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.8rem 1.2rem;
+    background: #25d366; /* Verde WhatsApp */
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .whatsapp-button:hover {
+    background: #20b955; /* Oscurece al pasar el mouse */
+  }
+  
